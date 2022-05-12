@@ -49,3 +49,8 @@ test('500 == "D"', () => {
 test('1000 == "M"', () => {
     expect(convertisseur.arabicToRoman(1000)).toBe("M")
 })
+
+test('4000 == "Error"', () => {
+    expect(() => convertisseur.arabicToRoman(4000)).toThrow(Error)
+})
+
