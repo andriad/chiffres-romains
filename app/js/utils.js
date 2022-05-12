@@ -5,6 +5,7 @@ class Convertisseur {
 
     arabicToRoman(number){
         let res = "";
+        
         if(number >= 4000){
             throw new Error("Number too high : " + number);
         }
@@ -14,25 +15,36 @@ class Convertisseur {
         }
         else{
             const romans = {
-                1 : "I",
-                2 : "II",
-                3 : "III",
-                5 : "V",
-                10 : "X",
-                50 : "L",
-                100 : "C",
-                500 : "D",
                 1000 : "M",
-                4 : "IV",
-                20 : "XX",
-                30 : "XXX",
-                40 : "XL",
-                9 : "IX",
-                90 : "XC",
+                900 : "CM",
+                500 : "D",
                 400 : "CD",
-                900 : "CM"
+                100 : "C",
+                90 : "XC",
+                50 : "L",
+                40 : "XL",
+                30 : "XXX",
+                20 : "XX",
+                10 : "X",
+                9 : "IX",
+                5 : "V",
+                4 : "IV",
+                3 : "III",
+                2 : "II",
+                1 : "I",
             }
-            res = romans[number];
+            //res = romans[number];
+            
+            const lettre = Object.values(romans).reverse();
+            const arabic = Object.keys(romans).reverse();
+
+            arabic.forEach((numKey, i) => {
+                while(number >= numKey) {
+                    number -= numKey;
+                    res += lettre[i]
+                }
+            })
+
             return res;
         }
     }
