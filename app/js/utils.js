@@ -29,7 +29,8 @@ class Convertisseur {
                 40 : "XL",
                 9 : "IX",
                 90 : "XC",
-                400 : "CD"
+                400 : "CD",
+                900 : "CM"
             }
             res = romans[number];
             return res;
