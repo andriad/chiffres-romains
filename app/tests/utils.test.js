@@ -73,3 +73,7 @@ test('30 == "XXX"', () => {
 test('40 == "XL"', () => {
     expect(convertisseur.arabicToRoman(40)).toBe("XL")
 })
+
+test('9 == "IX"', () => {
+    expect(convertisseur.arabicToRoman(9)).toBe("IX")
+})
