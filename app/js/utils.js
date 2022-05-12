@@ -24,6 +24,7 @@ class Convertisseur {
                 500 : "D",
                 1000 : "M",
                 4 : "IV",
+                20 : "XX"
             }
             res = romans[number];
             return res;
