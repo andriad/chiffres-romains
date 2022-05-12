@@ -3,7 +3,7 @@ class Convertiseur {
 
     }
 
-    convert(number){
+    arabicToRoman(number){
 
     }
 
