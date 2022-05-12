@@ -81,3 +81,7 @@ test('9 == "IX"', () => {
 test('90 == "XC"', () => {
     expect(convertisseur.arabicToRoman(90)).toBe("XC")
 })
+
+test('400 == "CD"', () => {
+    expect(convertisseur.arabicToRoman(400)).toBe("CD")
+})
