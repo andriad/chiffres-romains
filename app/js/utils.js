@@ -27,7 +27,8 @@ class Convertisseur {
                 20 : "XX",
                 30 : "XXX",
                 40 : "XL",
-                9 : "IX"
+                9 : "IX",
+                90 : "XC"
             }
             res = romans[number];
             return res;
