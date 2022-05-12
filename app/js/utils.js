@@ -8,36 +8,26 @@ class Convertisseur {
         if(number >= 4000){
             throw new Error("Number too high : " + number);
         }
-        switch(number) {
-            case 1:
-                res = "I"
-                break;
-            case 2:
-                res = "II"
-                break;
-            case 3:
-                res = "III"
-                break;
-            case 5:
-                res = "V"
-                break;
-            case 10:
-                res = "X"
-                break;
-            case 50:
-                res = "L"
-                break;
-            case 100:
-                res = "C"
-                break;
-            case 500:
-                res = "D"
-                break;
-            case 1000:
-                res = "M"
-                break;
+
+        if(number <= 0) {
+            return "";
         }
-        return res;
+        else{
+            const romans = {
+                1 : "I",
+                2 : "II",
+                3 : "III",
+                5 : "V",
+                10 : "X",
+                50 : "L",
+                100 : "C",
+                500 : "D",
+                1000 : "M",
+                4 : "IV",
+            }
+            res = romans[number];
+            return res;
+        }
     }
 
 }
