@@ -54,3 +54,10 @@ test('4000 == "Number too high : 4000"', () => {
     expect(() => convertisseur.arabicToRoman(4000)).toThrow(Error)
 })
 
+test('1000 == "M"', () => {
+    expect(convertisseur.arabicToRoman(1000)).toBe("M")
+})
+
+test('4 == "IV"', () => {
+    expect(convertisseur.arabicToRoman(4)).toBe("IV")
+})
