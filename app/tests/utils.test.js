@@ -61,3 +61,7 @@ test('1000 == "M"', () => {
 test('4 == "IV"', () => {
     expect(convertisseur.arabicToRoman(4)).toBe("IV")
 })
+
+test('20 == "XX"', () => {
+    expect(convertisseur.arabicToRoman(20)).toBe("XX")
+})
