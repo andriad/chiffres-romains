@@ -7,23 +7,23 @@ beforeAll(() => {
 })
 
 test('-1 == ""', () => {
-    expect(convertisseur.arabicToRoman(-1).toBe(""))
+    expect(convertisseur.arabicToRoman(-1)).toBe("")
 })
 
 test('0 == ""', () => {
-    expect(convertisseur.arabicToRoman(0).toBe(""))
+    expect(convertisseur.arabicToRoman(0)).toBe("")
 })
 
 test('1 == "I"', () => {
-    expect(convertisseur.arabicToRoman(1).toBe("I"))
+    expect(convertisseur.arabicToRoman(1)).toBe("I")
 })
 
 test('2 == "II"', () => {
-    expect(convertisseur.arabicToRoman(2).toBe("II"))
+    expect(convertisseur.arabicToRoman(2)).toBe("II")
 })
 
 test('3 == "III"', () => {
-    expect(convertisseur.arabicToRoman(3).toBe("III"))
+    expect(convertisseur.arabicToRoman(3)).toBe("III")
 })
 
 test('5 == "V"', () => {
