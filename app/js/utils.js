@@ -5,7 +5,9 @@ class Convertisseur {
 
     arabicToRoman(number){
         let res = "";
-
+        if(number >= 4000){
+            throw new Error("Number too high : " + number);
+        }
         switch(number) {
             case 1:
                 res = "I"
