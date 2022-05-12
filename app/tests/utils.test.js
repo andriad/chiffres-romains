@@ -95,3 +95,7 @@ test('99 == "XCIX"', () => {
     expect(convertisseur.arabicToRoman(99)).toBe("XCIX")
 })
 
+test('999 == "CMXCIX"', () => {
+    expect(convertisseur.arabicToRoman(999)).toBe("CMXCIX")
+})
+
